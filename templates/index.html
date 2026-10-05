@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Python Calculator</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <div class="top">
+
+            <span>☰</span>
+
+            <b>Standard</b>
+
+            <span>◫</span>
+
+            <span>↶</span>
+
+        </div>
+
+
+        <div class="display">
+
+            <div id="history"></div>
+
+            <div id="display">0</div>
+
+        </div>
+
+
+        <div class="memory">
+
+            <button onclick="memoryClear()">MC</button>
+            <button onclick="memoryRecall()">MR</button>
+            <button onclick="memoryAdd()">M+</button>
+            <button onclick="memorySubtract()">M−</button>
+            <button onclick="memorySave()">MS</button>
+            <button onclick="memoryRecall()">M⌄</button>
+
+        </div>
+
+
+        <div class="buttons">
+
+            <button onclick="percent()">%</button>
+            <button onclick="clearEntry()">CE</button>
+            <button onclick="clearAll()">C</button>
+            <button onclick="backspace()">⌫</button>
+
+            <button onclick="reciprocal()">¹⁄ₓ</button>
+            <button onclick="square()">x²</button>
+            <button onclick="squareRoot()">√x</button>
+            <button onclick="chooseOperator('/')">÷</button>
+
+            <button onclick="addNumber('7')">7</button>
+            <button onclick="addNumber('8')">8</button>
+            <button onclick="addNumber('9')">9</button>
+            <button onclick="chooseOperator('*')">×</button>
+
+            <button onclick="addNumber('4')">4</button>
+            <button onclick="addNumber('5')">5</button>
+            <button onclick="addNumber('6')">6</button>
+            <button onclick="chooseOperator('-')">−</button>
+
+            <button onclick="addNumber('1')">1</button>
+            <button onclick="addNumber('2')">2</button>
+            <button onclick="addNumber('3')">3</button>
+            <button onclick="chooseOperator('+')">+</button>
+
+            <button onclick="changeSign()">+/−</button>
+            <button onclick="addNumber('0')">0</button>
+            <button onclick="addNumber('.')">.</button>
+
+            <button class="equals" onclick="calculate()">=</button>
+
+        </div>
+
+    </div>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
